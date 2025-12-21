@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style1.css">
+  </head>
+<body>
+  <header id="home-section">
+    <nav class="navbar">
+    <ul>
+      <li><a href="#home-section">Home</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <main class="hero">
+    <div class="intro">
+      <h1>Hi, I'm <span>Fadhla.</span></h1>
+      <p class="subtitle">M0403241004 Proxy Boyce</p>
+      <p class="subtitle">Undergraduate Computer Science @ IPB University</p>
+    </div>
+  </main>
+  
+  <section id="about-section" class="about-section">
+      <p class="typing" id="typing"></p>
+  </section>
+
+  <section id="contact-section" class="contact-section">
+      <div class="social-icons" id="contact-section">
+        <a href="https://github.com/p4rtof" class="icon github" target="_blank">
+            <img src="github-icon.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/fadhla-060793323/" class="icon linkedin" target="_blank">
+            <img src="linkedin-icon.png" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/p4rtof" class="icon instagram" target="_blank">
+            <img src="instagram-icon.png" alt="Instagram">
+        </a>
+        <a href="mailto:fadhla153@gmail.com" class="icon email" target="_blank">
+            <img src="email-icon.png" alt="Email">
+        </a>
+        <a href="https://open.spotify.com/user/r24j7s7u7nzpdbfkegbxjsp9a" class="icon spotify" target="_blank">
+            <img src="spotify-icon.png" alt="Spotify">
+        </a>
+      </div>
+  </section>
+ 
+<p class="typing" id="about-section"></p>
+
+<footer class="footer">
+  <p>&copy; 2025 Fadhla. All Rights Reserved.</p>
+</footer>
+
+<script>
+  const text = "I'm a second-year Computer Science student at IPB University. My journey in the IT world might look a little different, but it's actually pretty normal. I'm pretty new to getting into this field. Since college, I've been fascinated with how technology solves complex problems. But recently, I've noticed that my interests have really come together in one area that feels particularly relevant: data science. To me, data science isn't just about numbers or statistics, but also about the stories behind each data set. It's all about spotting patterns, finding hidden insights, and using that info to make better decisions. To me, data is like a universal language that can explain things in various fields, such as business, health, and the environment. As a beginner, I know that this path isn't easy. There's a lot to learn, like programming languages like Python and R, understanding machine learning algorithms, and data visualization skills. I've been working on improving my data science skills lately. My goal is simple: to take abstract data and make it more accessible and understandable to others. If I put in the effort and stay curious, I think I can really make a name for myself in this field and contribute something valuable in the future. This journey has only just begun, but I'm eager to explore further and learn how data can be processed and used.";
+  let i = 0;
+  const speed = 30;
+  const typingEl = document.getElementById("typing");
+
+  function typeWriter() {
+    if (i < text.length) {
+      typingEl.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  typeWriter();
+  </script>
+  
+</body>
+</html>

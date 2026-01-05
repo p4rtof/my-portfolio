@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style.css">
   </head>
 <body>
   <header id="home-section">
@@ -55,22 +55,7 @@
   <p>&copy; 2025 Fadhla. All Rights Reserved.</p>
 </footer>
 
-<script>
-  const text = "I'm a second-year Computer Science student at IPB University. My journey in the IT world might look a little different, but it's actually pretty normal. I'm pretty new to getting into this field. Since college, I've been fascinated with how technology solves complex problems. But recently, I've noticed that my interests have really come together in one area that feels particularly relevant: data science. To me, data science isn't just about numbers or statistics, but also about the stories behind each data set. It's all about spotting patterns, finding hidden insights, and using that info to make better decisions. To me, data is like a universal language that can explain things in various fields, such as business, health, and the environment. As a beginner, I know that this path isn't easy. There's a lot to learn, like programming languages like Python and R, understanding machine learning algorithms, and data visualization skills. I've been working on improving my data science skills lately. My goal is simple: to take abstract data and make it more accessible and understandable to others. If I put in the effort and stay curious, I think I can really make a name for myself in this field and contribute something valuable in the future. This journey has only just begun, but I'm eager to explore further and learn how data can be processed and used.";
-  let i = 0;
-  const speed = 30;
-  const typingEl = document.getElementById("typing");
-
-  function typeWriter() {
-    if (i < text.length) {
-      typingEl.innerHTML = text.substring(0, i + 1) + '<span class="cursor">|</span>';
-      i++;
-      setTimeout(typeWriter, speed);
-    }
-  }
-
-  typeWriter();
-  </script>
+<script src="script.js"></script>
   
 </body>
 </html>
